@@ -1,0 +1,177 @@
+/*CONFIGURACIÓ GENERAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estructura body*/
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Configuració fonts i llistats*/
+h1{ font-size: 4rem;}
+h2{ font-size: 2.8em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5rem;}
+ul{ list-style: none;}
+li{ font-size: 1.25rem;}
+
+.color-acento{ color: turquoise}
+
+.color-xarxes{ font-weight: bold;}
+
+.titol {    
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 87 rem;
+    margin:auto;
+}
+
+/*Botones marcado*/
+button:hover{
+    background-color: turquoise;
+}
+
+/*CONFIGURACIÓ ESPECÍFICA*/
+
+/*BARRA DE NAVEGACIÓ*/
+nav{
+    background-color: rgb(246,246,246);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Contenedor de navegación*/
+nav .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#logoNav{
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+}
+/*Lista de Navegación*/
+
+.navList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.navList li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Links de la lista*/
+
+.navList li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 3px solid rgba(black);
+}
+
+/*Hover (presionar encima) de la lista*/
+
+.navList li a:hover {
+    background: #3f3f3f;
+}
+
+
+
+@media (min-width:720px){
+    nav{
+        position:fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav .contenedor{
+        justify-content: space-between;
+    }
+
+    .navList{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+        border: 3px solid rgba(black);
+    }
+
+    #logoNav {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+
+}
+
+/*PERSONATGES*/
+
+.productes {
+    border: 0.1px solid black;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  
+
+  .productes1 {
+    border: 0.1px solid black;
+    margin: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .quadrat {
+    border: 0.1px solid black;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  #personatgesimg {
+    height: 100%;
+    width: 10rem;
+    max-height: 10rem;
+    border: 0.1px solid black;
+    margin: 2%;
+  }
+  
+  .informacio{
+    margin: 2rem;
+  }
+
+  .informacio1{
+    margin: 3rem;
+  }
+  
+  .miniItem1 {
+    margin: rem;
+    margin-top: 3rem;
+  }
+

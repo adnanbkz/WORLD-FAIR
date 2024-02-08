@@ -1,0 +1,214 @@
+/*APIS*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{scroll-behavior:smooth;}
+
+body {font-family: 'Poppins', sans-serif;}
+
+h1{ font-size: 4rem;}
+h2{ font-size: 10rem;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5rem;}
+ul{ list-style: none;}
+li{ font-size: 1.25rem;}
+
+.color-acento {color: palevioletred;}
+.color-purple {color:purple;}
+.color-red {color:red;}
+.color-lightblue {color:blueviolet}
+
+.contenedor {
+    max-width: 87rem;
+    margin:auto;
+}
+
+.articulo {
+    padding: 3rem 3rem;
+    margin-left: 3rem;
+    border-color: black;
+    border: 10px;
+}
+
+.imagenart3{
+    display: flex;
+    height: 15rem;
+    width: 15rem;
+    float: right;
+    justify-content: end;
+}
+
+.imagenart3 p {
+    padding: 1rem;
+}
+
+
+.index {
+    display: flex;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.index a {
+    font-style: none;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    flex-wrap:wrap;
+    text-decoration: none;
+    color: black;
+}
+
+.index a:hover {
+    transition: 0.8s ease-in-out;
+    background-color: rgb(210, 94, 202);
+    border-radius: 8rem;
+}
+
+iframe .video {
+    box-shadow: 1rem;
+    color: black;
+    transition: 5s ease;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    width: 100vh;
+}
+
+
+
+.imagenart2{
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    justify-content: center;
+}
+
+.imagenart2 p {
+    padding: 1rem;
+}
+
+
+.cartasintoma {
+    width: 400px;
+    aspect-ratio:var(1 / 0.7)
+}
+
+/*CAUSAS*/
+.titolcausa {
+    font-size: 2.5rem;
+    color: #62486B;
+    font-weight: 500;
+}
+
+
+/*tabla medicamento*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #6c5b7b;
+    color: #fff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+/*FOOTER EN CONJUNTO*/
+footer {
+    width: 100%;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+/*AGRUPA EL FOOTER, LI DONA UN MAXIM I POSA UN PETIT PADDING.*/
+.contenedor-footer-general{
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.contenedor-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-footer{
+    width: 100%;
+    background-color: #62486B;
+    padding: 1.4rem;
+}
+
+.piedefooter {
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.list-ambientals {
+    list-style: georgian;
+}
+
+.copyrightfooter{
+    color: #c7c7c7;
+}
+
+.copyrightfooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.informació a{
+    text-decoration: none;
+    color: white;
+}
+
+.informació a:hover{
+    font-weight: bolder;
+    color: azure;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+

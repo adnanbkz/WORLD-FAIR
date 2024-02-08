@@ -1,0 +1,450 @@
+/*CONFIGURACIÓ GENERAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estructura body*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Configuració fonts i llistats*/
+h1{ font-size: 4rem;}
+h2{ font-size: 2.8em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5rem;}
+ul{ list-style: none;}
+li{ font-size: 1.25rem;}
+
+.color-acento{ color: turquoise}
+
+
+/*Botones*/
+.button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(purple);
+    box-shadow: 0.3rem 0.2rem 1rem purple;
+    color: black;
+    background-color: lightblue;
+}
+
+.contenedor {
+    max-width: 87 rem;
+    margin:auto;
+}
+
+/*Botones marcado*/
+button:hover{
+    background-color: purple;
+}
+
+/*CONFIGURACIÓ ESPECÍFICA*/
+
+/*BARRA DE NAVEGACIÓ*/
+nav{
+    background-color: rgb(246,246,246);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu ul a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu ul li {
+    position:relative;
+    float:left;
+}
+
+/*Contenedor de navegación*/
+nav .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#logoNav{
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+/*Lista de Navegación*/
+
+.navList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*Links de la lista*/
+
+.navList li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 3px solid rgba(rgb(30,40,10));
+    box-shadow: 0.3rem 0.2rem 1rem purple;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/*Hover (presionar encima) de la lista*/
+
+.navList li a:hover {
+    background: purple;
+}
+
+/*HEADER HERO*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/web_projecte_prova/img/esquizofrenia3.jpg)  no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*MAIN*/
+
+#farmaciaconfiança h2{
+    font-size: 5vh;
+
+}
+
+#farmaciaconfiança .contenedor{
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+
+/*SECCIÓ SERVEIS*/
+#serveis{
+    background-color: rgb(255, 255, 255);
+    color:white;
+    text-align: center;    
+}
+
+#serveis1{
+    background-color: #ffffff;
+    color:white;
+    text-align: center; 
+}
+
+#serveis .contenedor{
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+#serveis1 .contenedor{
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+/*CONFIGURACIÓN GENERAL DE LAS CARTAS DE LOS SERVICIOS*/
+#serveis .cartaservicios{
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 1rem;  
+}
+
+#serveis1 .cartaservicios{
+    background-position: center center;
+    background-size: cover;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;  
+}
+
+.imatgeESQ{
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+
+.cartaserveis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*SERVEI DIAGNOSTICS FOTO*/
+.cartaservicios:first-child{
+    background-color: purple;
+
+}
+
+/*SERVEI NUTRICIÓ FOTO*/
+.cartaservicios:nth-child(2){
+    background-color: purple;
+}
+    
+/*FOOTER*/
+footer {
+    width: 100%;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+/*AGRUPA EL FOOTER, LI DONA UN MAXIM I POSA UN PETIT PADDING.*/
+.contenedor-footer-general{
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.contenedor-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenedor-footer{
+    width: 100%;
+    background-color: purple;
+    padding: 1.4rem;
+}
+
+.piedefooter {
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.copyrightfooter{
+    color: #c7c7c7;
+}
+
+.copyrightfooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.informació a{
+    text-decoration: none;
+    color: white;
+}
+
+.informació a:hover{
+    color:aquamarine;
+}
+
+@media screen and (max-width: 1250px){
+    .contenedor-body{
+        flex-wrap: wrap;
+    }
+
+    .blog-box{
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px){
+    .blog-box{
+        width: 70%;
+    }
+    
+}
+
+@media(max-width:720px){
+    .cartaserveis {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:720px){
+    nav{
+        position:fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navList{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+        border: 3px solid rgba(black);
+    }
+
+    .navList{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    #logoNav {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+}
+
+.price {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/esquizo1.png)  no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#textcauses {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*PERSONATGES*/
+
+#blog {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    text-decoration: none;
+}
+
+.blog-container {
+    justify-content: space-between;
+}
+
+.blog-heading{
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-heading span{
+    color: purple;
+}
+
+.blog-heading h3{
+    font-size: 3.4rem;
+    color: purple;
+    font-weight: 700;
+}
+
+.blog-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.blog-box {
+    width: 22rem;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 1.5rem;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text {
+    padding: 30px;
+}
+
+.blog-text span {
+    color: purple;
+    font-size: 0.9rem;
+}
+
+.blog-text a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+.blog-text a:hover{
+    color: purple;
+    transition: all ease 0.3s;
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 1rem 0rem;
+}
+
+.blog-text a{
+    color:#0f0f0f;
+}
+
+.blog-text a:hover{
+    color: purple;
+    transition: all ease 0.3s;
+}
+

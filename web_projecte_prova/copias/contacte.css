@@ -1,0 +1,364 @@
+/*CONFIGURACIÓ GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /*per a que els items no es passin del seu tamany*/
+    box-sizing: border-box;
+}
+
+/*Per baixar de manera fluida*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estructura body*/
+body {
+    /*He posat ROBOTO, hem surt tot això pero em funciona, crec que es per adaptar a diferents dispositius i/o sistemes*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: azure;
+    color: #3f3f3f;
+    padding: 0 0;
+}
+
+/*Configuració fonts i llistats*/
+h1{ font-size: 4rem;}
+h2{ font-size: 2.8em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.2rem; font-weight: bold;}
+ul{ list-style: none; padding:0; }
+li{ font-size: 1.25rem;}
+
+.color-acento{ color: turquoise}
+
+.color-xarxes{ font-weight: bold;}
+
+/*Botones*/
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(black);
+    box-shadow: 0.3rem 0.2rem 1rem rgba(0,0,0,0.5);
+    color: black;
+    background-color: lightblue;
+
+}
+
+/*Container total de contacte*/
+.contingutcontacte {
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem;
+}
+
+/*Titulo*/
+.logo {
+    text-align:center;
+    font-size: 3em;
+}
+
+/*tot lo que envolta objectes de dins*/
+.envoltori-contacte {
+    box-shadow: 0 0 20px 0 rgba(20,15,10, .5)
+}
+
+/* "*" es usat per aplicar-ho a tots els objectes que estàn a dintre*/
+.envoltori-contacte > * {
+    padding: 1rem;
+}
+
+.contact-form {
+    background: color(245,250,255);
+}
+/*Nova disposició grid, per fer que s'adapti a tota mena de dispositius*/
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .bloquep {
+    grid-column: 1 / 3;
+}
+
+/*Configuració del margin i el padding individual de l'etiqueta P*/
+.contact-form form p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact-form h3{
+    text-align: center;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border:none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid turquoise;
+    color: #000000;
+}
+
+.contact-form form button {
+    background: turquoise;
+    border: 0;
+    padding: 0.8rem;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background-color: turquoise;
+    color: rebeccapurple;
+}
+
+.contact-info {
+    background: #ffffff;
+}
+
+/*Configuració específica de la segona part del contacte*/
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/*Donem espai al llistat de la segona part del contacte*/
+.contact-info ul li {
+    padding: 0.5rem;
+}
+
+/*Botones marcado*/
+button:hover{
+    background-color: turquoise;
+}
+
+/*CONFIGURACIÓ ESPECÍFICA*/
+
+/*BARRA DE NAVEGACIÓ*/
+nav{
+    background-color: rgb(246,246,246);
+    flex-wrap: wrap;
+    height: auto;
+}
+
+/*Contenedor de navegación*/
+nav .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logoNav{
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+}
+/*Lista de Navegación*/
+
+.navList{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.navList li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Links de la lista*/
+
+.navList li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+
+/*Hover (presionar encima) de la lista*/
+
+.navList li a:hover {
+    background: #3f3f3f;
+}
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #202020;
+    color: white;
+    padding-top: 1rem;
+}
+
+.contenedor-footer-general{
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.contenedor-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna1{
+    max-width: 25rem;
+}
+
+.columna1 h1{
+    font-size: 1.4rem;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 1.3rem;
+}
+
+.columna2{
+    max-width: 25rem;
+}
+
+.columna2 h1{
+    font-size: 1.4rem;
+}
+
+.row{
+    margin-top: 1.25rem;
+    display: flex;
+}
+
+.row img{
+    width: 2.2rem;
+    height: 2.3rem;
+}
+.row label{
+    margin-left: 1rem;
+    color: #c7c7c7;
+}
+
+.columna3 h1{
+    font-size: 1.4rem;
+}
+
+.row2{
+    margin-top: 1.2rem;
+    display: flex;
+}
+
+.row2 img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.row2 label{
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    max-width: 10rem;
+
+}
+
+.contenedor-footer{
+    width: 100%;
+    background-color: #101010;
+    padding: 1.4rem;
+
+}
+
+.piedefooter {
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.copyrightfooter{
+    color: #c7c7c7;
+}
+
+.copyrightfooter a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.informació a{
+    text-decoration: none;
+    color: white;
+}
+
+.informació a:hover{
+    color:aquamarine;
+}
+
+@media screen and (max-width: 1100px){
+    .contenedor-body{
+        flex-wrap: wrap;
+    }
+    .columna2,
+    .columna3{
+        margin-top: 2.3rem;
+    }
+    
+}
+
+@media (min-width:700px){
+
+    .envoltori-contacte{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 2rem;
+    }
+
+    .envoltori-contacte > * {
+        padding: 4rem;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    nav{
+        position:fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav .contenedor{
+        justify-content: space-between;
+    }
+
+    .navList{
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    #logoNav {
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    #serveis {
+        justify-content: center;
+    }
+
+}
