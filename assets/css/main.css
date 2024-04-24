@@ -191,8 +191,8 @@ a.main-filled-button:hover {
 
 
 .language-icon img {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 a.main-button-icon {
@@ -795,7 +795,6 @@ banner
   position: relative;
   display: inline-block;
   max-width: none;
-  filter: grayscale();
 }
 
 *,
